@@ -30,7 +30,7 @@ for i, num_real in enumerate(real):
 		points[i, j] = mandelbrot(complex(num_real, num_imag))
 
 # faves = gist_yarg, afmhot, gist_earth, jet, nipy_spectral
-plt.imshow(points.T, cmap='gist_yarg', extent=[-2, .5, -1.25, 1.25])
+plt.imshow(points.T, cmap='jet', extent=[-2, .5, -1.25, 1.25])
 plt.xlabel('Real')
 plt.ylabel('Imaginary')
 plt.show()
